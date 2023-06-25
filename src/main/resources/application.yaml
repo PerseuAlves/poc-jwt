@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    driverClassName: org.h2.Driver # DB drive
+    url: jdbc:h2:mem:jwtDB # DB url
+    username: ${DB_USERNAME} # DB username
+    password: ${DB_PASSWORD} # DB password
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect # JPA Dialeto
+    defer-datasource-initialization: true # Configuração para que o arquivo "data.sql" seja lido só após a criação das tabelas
+    show-sql: true # Mostrar query executadas
+  h2:
+    console:
+      enabled: true # Ativa o console H2
+      path: /h2-console # Path do console H2
+
+jwt: # Configuração customizada
+  secret: ${JWT_SECRET} # Secret usada para gerar o token

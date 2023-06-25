@@ -1,0 +1,3 @@
+INSERT INTO usuarios (id, username, password, role) VALUES (1, 'admin', '$2a$12$CVCH0r9JwXxQZE9uaJF6vuDLIsCBP9HNgeK6h3z3qgVZmPM.1G/QW', 'ADMIN');
+INSERT INTO usuarios (id, username, password, role) VALUES (2, 'user', '$2a$12$CVCH0r9JwXxQZE9uaJF6vuDLIsCBP9HNgeK6h3z3qgVZmPM.1G/QW', 'USER');
+INSERT INTO produtos (id, nome, preco, descricao, usuario_id) VALUES (1, 'Sabão', 3.89, 'Produto de limpeza', 1);
